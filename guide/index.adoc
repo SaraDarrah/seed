@@ -11,21 +11,16 @@ Emily Smith <emily.smith@appliedis.com>; Jonathan Meyer <jonathan.meyer@appliedi
 
 == Purpose
 
-This guide introduces data scientists and algorithm developers to the Seed and Scale technologies developed at the
-National Geospatial-Intelligence Agency (NGA) Research. These technologies exist to reduce friction in taking algorithms
-from proof of concept to operational execution within distributed processing clusters.
+This guide introduces data scientists and algorithm developers to National Geospatial-Intelligence Agency (NGA) Research's Seed and Scale technologies. This suite provides Data Scientists and Algorithm Developers with the ability to complete algorithm proof of concepts, test and refine algorithms over time, validate new algorithms against massive volumes of historic data and integrate final algorithms into a workflow.  It allows decision makers to validate data flows and look for consistent data volumes.   
 
 Seed is a general standard to aid in the discovery and consumption of a discrete unit of work contained within a Docker
-image. Seed allows data scientists to focus their expertise on solving domain problems and rely on the toolchain we
+image. The Seed standard clearly defines the requirements and interface of an algorithm, ensuring that local testing is consistent with operational environments. It allows data scientists to focus their expertise on solving domain problems and rely on the toolchain we
 provide to ensure their algorithm is packaged properly for operational use. Seed can be used throughout the development
 lifecycle to build, test and package within a simulated environment that closely emulates targeted operational
 environments. This reduces risk and allows the algorithm requirements to be explicitly defined by the developers who
 best understand their processing needs.
 
-Scale frees data scientists and algorithm developers from the complexity of distributed system concepts and offers an
-integration platform for highly parallel processing of data. Scale also ensures decision makers and system
-administrators are able to visually monitor data flows and ensure reliable data processing.  It enables a true DevOps
-environment for algorithm development and cloud transition.
+SCALE allows data scientists and algorithm developers to publist a Seed compliant algorithm and complete algorithm proof of concepts, test and refine algorithms over time and integrate final algorithms into a system to easily share work within their community. Scale also ensures decision makers and system administrators are able to visually monitor data flows and ensure reliable data processing.  It enables a true DevOps environment for algorithm development and cloud transition.
 
 This document will focus primarily on using the Seed Command-Line Interface (CLI) to build, test and publish your
 algorithm as a Seed compliant Docker image. The Seed toolchain consists of the CLI, Silo, Vault and any processing
